@@ -1,0 +1,32 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [react] ] -o public/js/main.js & nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0dezer0/react-skeleton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c0dezer0/react-skeleton/issues"
+  },
+  "homepage": "https://github.com/c0dezer0/react-skeleton#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "path": "^0.12.7",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "reflux": "^0.4.1",
+    "watchify": "^3.7.0",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
